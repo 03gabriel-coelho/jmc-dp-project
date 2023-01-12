@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://www.jmc-dp.com.br/develop_html/static/css/main.ad7dfba0.css",
-    "main.js": "https://www.jmc-dp.com.br/develop_html/static/js/main.3924bf72.js",
-    "static/js/787.bd1ec11b.chunk.js": "https://www.jmc-dp.com.br/develop_html/static/js/787.bd1ec11b.chunk.js",
-    "static/media/imagemLegal.png": "https://www.jmc-dp.com.br/develop_html/static/media/imagemLegal.e735aabbe38404d660fc.png",
-    "index.html": "https://www.jmc-dp.com.br/develop_html/index.html",
-    "main.ad7dfba0.css.map": "https://www.jmc-dp.com.br/develop_html/static/css/main.ad7dfba0.css.map",
-    "main.3924bf72.js.map": "https://www.jmc-dp.com.br/develop_html/static/js/main.3924bf72.js.map",
-    "787.bd1ec11b.chunk.js.map": "https://www.jmc-dp.com.br/develop_html/static/js/787.bd1ec11b.chunk.js.map"
+    "main.css": "https://www.jmc-dp.com.br/static/css/main.ad7dfba0.css",
+    "main.js": "https://www.jmc-dp.com.br/static/js/main.c4bb0ce2.js",
+    "static/js/787.bd1ec11b.chunk.js": "https://www.jmc-dp.com.br/static/js/787.bd1ec11b.chunk.js",
+    "static/media/imagemLegal.png": "https://www.jmc-dp.com.br/static/media/imagemLegal.e735aabbe38404d660fc.png",
+    "index.html": "https://www.jmc-dp.com.br/index.html",
+    "main.ad7dfba0.css.map": "https://www.jmc-dp.com.br/static/css/main.ad7dfba0.css.map",
+    "main.c4bb0ce2.js.map": "https://www.jmc-dp.com.br/static/js/main.c4bb0ce2.js.map",
+    "787.bd1ec11b.chunk.js.map": "https://www.jmc-dp.com.br/static/js/787.bd1ec11b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7dfba0.css",
-    "static/js/main.3924bf72.js"
+    "static/js/main.c4bb0ce2.js"
   ]
 }
