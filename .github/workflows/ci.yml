@@ -1,10 +1,13 @@
 name: jmc-dp.com.br
-on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
+on:
+  push:
     branches:
       - main
+      - develop
+jobs:
+  build:
+    if: ${{ github.ref == 'main' }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout do repositorio
         uses: actions/checkout@v1
