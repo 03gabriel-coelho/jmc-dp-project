@@ -1,22 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import imagemLegal from './imagemLegal.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          DEVELOP
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Esse é o site da juliana!</p>
+        <p>Está em manutenção...</p>
+        <img src={ imagemLegal } alt="imagemLegal" />
       </header>
     </div>
   );

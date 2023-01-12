@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://www.jmc-dp.com.br/develop_html/static/css/main.073c9b0a.css",
-    "main.js": "https://www.jmc-dp.com.br/develop_html/static/js/main.9325ba99.js",
+    "main.css": "https://www.jmc-dp.com.br/develop_html/static/css/main.ad7dfba0.css",
+    "main.js": "https://www.jmc-dp.com.br/develop_html/static/js/main.3924bf72.js",
     "static/js/787.bd1ec11b.chunk.js": "https://www.jmc-dp.com.br/develop_html/static/js/787.bd1ec11b.chunk.js",
-    "static/media/logo.svg": "https://www.jmc-dp.com.br/develop_html/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/imagemLegal.png": "https://www.jmc-dp.com.br/develop_html/static/media/imagemLegal.e735aabbe38404d660fc.png",
     "index.html": "https://www.jmc-dp.com.br/develop_html/index.html",
-    "main.073c9b0a.css.map": "https://www.jmc-dp.com.br/develop_html/static/css/main.073c9b0a.css.map",
-    "main.9325ba99.js.map": "https://www.jmc-dp.com.br/develop_html/static/js/main.9325ba99.js.map",
+    "main.ad7dfba0.css.map": "https://www.jmc-dp.com.br/develop_html/static/css/main.ad7dfba0.css.map",
+    "main.3924bf72.js.map": "https://www.jmc-dp.com.br/develop_html/static/js/main.3924bf72.js.map",
     "787.bd1ec11b.chunk.js.map": "https://www.jmc-dp.com.br/develop_html/static/js/787.bd1ec11b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9325ba99.js"
+    "static/css/main.ad7dfba0.css",
+    "static/js/main.3924bf72.js"
   ]
 }
