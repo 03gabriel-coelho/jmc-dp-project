@@ -6,7 +6,7 @@ on:
       - develop
 jobs:
   prod-check:
-    if: ${{ github.ref == 'main' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do repositorio
