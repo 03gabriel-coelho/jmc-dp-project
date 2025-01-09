@@ -1,3 +1,50 @@
 .section {
-  
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 100%;
+}
+
+.section h1 {
+  line-height: 35px;
+  display: flex;
+  text-align: center;
+  color: var(--background);
+  font-size: 28px;
+  gap: 30px;
+}
+
+.section_description_two {
+  margin: 0px 30px 0px 30px;
+}
+
+.section_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.842);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.section_contact p {
+  color: var(--whatsapp_hover);
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .section h1 {
+    margin: 0px 30px 0px 30px;
+    font-size: 20px;
+  }
 }

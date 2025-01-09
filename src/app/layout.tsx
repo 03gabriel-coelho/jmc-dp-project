@@ -3,6 +3,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "document/components/header";
+import backgroundImage from "document/images/background.jpg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +25,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-        <div className="overlay"></div>
+        <Image src={backgroundImage} alt="background image" className="background_image"/>
         <Header />
         {children}
       </body>
