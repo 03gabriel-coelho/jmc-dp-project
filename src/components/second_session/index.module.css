@@ -9,10 +9,10 @@
 }
 
 .second_section_container {
-  width: 80%;
+  width: 70%;
   height: 80%;
   display: grid;
-  grid-template-columns: 2.5fr 1.25fr 2.5fr 1.25fr 2.5fr;
+  grid-template-columns: 2.86fr 0.7fr 2.86fr 0.7fr 2.86fr;
   grid-template-rows: 80px auto;
 }
 
@@ -29,7 +29,7 @@
 .second_section_header_five {
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
   font-family: "Bebas Neue", serif;
 }
