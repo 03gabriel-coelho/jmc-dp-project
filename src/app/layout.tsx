@@ -25,7 +25,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-        <Image src={backgroundImage} alt="background image" className="background_image"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+          rel="stylesheet"
+        ></link>
+        <div className="background_image">
+          <Image src={backgroundImage} alt="background image" />
+        </div>
         <Header />
         {children}
       </body>
