@@ -15,7 +15,7 @@
   display: flex;
   text-align: center;
   color: var(--background);
-  font-size: 28px;
+  font-size: 25px;
   gap: 30px;
 }
 
@@ -32,6 +32,8 @@
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .section_contact p {
@@ -40,11 +42,35 @@
   font-weight: 800;
   font-size: 20px;
   font-style: italic;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.section_contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  z-index: 0;
+  transform: skewX(-30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .section {
-    height: 60vh;
+    min-height: 500px;
   }
 
   .section h1 {
