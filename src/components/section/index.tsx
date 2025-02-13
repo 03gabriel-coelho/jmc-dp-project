@@ -7,7 +7,7 @@ export default function Section() {
         Administramos todo o processo de Departamento
         Pessoal e Folha de Pagamento!
       </h1>
-      <a className={styles.section_contact} href="https://wa.me/553198492779">
+      <a className={styles.section_contact} href="https://wa.me/553198492779" target="_blank" rel="noopener noreferrer">
         <p>
           Entre em contato agora!
         </p>

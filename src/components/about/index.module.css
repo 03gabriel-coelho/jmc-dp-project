@@ -1,0 +1,40 @@
+.about {
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+  color: var(--title-color);
+}
+
+.about h4 {
+  padding: 0px 20vw 0px 20vw;
+  white-space: 10px;
+  line-height: 1.8;
+  color: var(--text-color);
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: 1px;
+}
+
+.about h4 b {
+  color: var(--green);
+}
+
+#about_final {
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 900px) {
+  .about h4 {
+    padding: 0px 10vw 0px 10vw;
+  }
+}

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
@@ -13,14 +14,18 @@ export default function Header() {
         width={150}
       />
       <section>
-        <Link href=".about">
+        <Link href="#about">
           <h2>Sobre</h2>
         </Link>
         <Link href=".services">
           <h2>Serviços</h2>
         </Link>
       </section>
-      <button>
+      <button
+        onClick={() => {
+          window.open("https://wa.me/553198492779", "_blank");
+        }}
+      >
         <p>Entre em contato</p>
         <IoLogoWhatsapp />
       </button>
