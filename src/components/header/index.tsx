@@ -17,7 +17,7 @@ export default function Header() {
         <Link href="#about">
           <h2>Sobre</h2>
         </Link>
-        <Link href=".services">
+        <Link href="#services">
           <h2>Serviços</h2>
         </Link>
       </section>
@@ -26,7 +26,7 @@ export default function Header() {
           window.open("https://wa.me/553198492779", "_blank");
         }}
       >
-        <p>Entre em contato</p>
+        <p>+55 31 99849-2779</p>
         <IoLogoWhatsapp />
       </button>
     </header>

@@ -1,0 +1,64 @@
+.services {
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services h2 {
+  padding: 0;
+  margin: 1em 0 0 0;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+}
+
+.services ul h2 svg {
+  margin-right: 0.2em;
+}
+
+.services ul {
+  margin: 0 0 3em 0;
+  padding: 1em 2em 1em 3em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background-color: var(--background);
+  width: 50vw;
+  list-style: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services ul li {
+  margin: 1em 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.services ul li svg {
+  color: var(--green);
+  margin-right: 0.2em;
+  min-width: 1em;
+  min-height: 1em;
+  width: 1em;
+  height: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .services ul {
+    width: 95vw;
+    padding: 0 0 0 1em;
+  }
+
+  .services ul li {
+    margin: 2em 0;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+  .services ul {
+    width: 80vw;
+  }
+}
