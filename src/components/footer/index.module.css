@@ -18,6 +18,10 @@
   padding-right: 20vw;
 }
 
+.footer .contact h3 svg{
+  margin-right: 0.2em;
+}
+
 .footer .links {
   display: flex;
   flex-direction: column;
