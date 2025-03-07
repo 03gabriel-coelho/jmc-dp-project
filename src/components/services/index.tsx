@@ -49,10 +49,6 @@ export default function Services() {
         </li>
         <li>
           <BiRightArrow />
-          Acompanhamento periódico dos exames médicos e afastamentos
-        </li>
-        <li>
-          <BiRightArrow />
           Relatórios e Indicadores Mensais
         </li>
         <li>
