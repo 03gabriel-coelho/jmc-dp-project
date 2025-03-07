@@ -5,7 +5,9 @@ export default function Services() {
   return (
     <div className={styles.services} id="services">
       <ul>
-        <h2><BiRightArrow /> Quais os principais serviços?</h2>
+        <h2>
+          <BiRightArrow /> Quais os principais serviços?
+        </h2>
         <li>
           <BiRightArrow />
           Admissão e demissão de colaboradores
@@ -33,11 +35,11 @@ export default function Services() {
         <li>
           <BiRightArrow />
           Preparar e emitir as guias de Encargos Sociais | INSS | FGTS digital |
-          IRPF
+          IRPF - Incluindo reclamatórias trabalhistas.
         </li>
         <li>
           <BiRightArrow />
-          Rotina de Rescisão, inclusive com Homologação em Sindicato
+          Rotina de Rescisão
         </li>
         <li>
           <BiRightArrow />
