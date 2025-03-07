@@ -6,6 +6,9 @@ import JMCHeader from "document/images/jmc-header.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Header() {
+  const phone = "553198492779";
+  const message = encodeURIComponent("Olá, gostaria de fazer um orçamento!");
+  const whatsappURL = `https://api.whatsapp.com/send/?phone=${phone}&text=${message}&type=phone_number&app_absent=0`;
   return (
     <header className={styles.header}>
       <Image
@@ -23,7 +26,7 @@ export default function Header() {
       </section>
       <button
         onClick={() => {
-          window.open("https://wa.me/553198492779", "_blank");
+          window.open(whatsappURL, "_blank");
         }}
       >
         <p>+55 31 99849-2779</p>

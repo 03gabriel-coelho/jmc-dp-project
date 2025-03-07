@@ -1,6 +1,10 @@
 import styles from "./index.module.css";
 
 export default function Section() {
+  const phone = "553198492779";
+  const message = encodeURIComponent("Olá, gostaria de fazer um orçamento!");
+  const whatsappURL = `https://api.whatsapp.com/send/?phone=${phone}&text=${message}&type=phone_number&app_absent=0`;
+
   return (
     <section className={styles.section}>
       <h1 className={styles.section_description_one}>
@@ -8,7 +12,7 @@ export default function Section() {
       </h1>
       <a
         className={styles.section_contact}
-        href="https://wa.me/553198492779"
+        href={whatsappURL}
         target="_blank"
         rel="noopener noreferrer"
       >
