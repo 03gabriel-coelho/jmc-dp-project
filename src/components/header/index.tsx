@@ -11,16 +11,19 @@ export default function Header() {
   const whatsappURL = `https://api.whatsapp.com/send/?phone=${phone}&text=${message}&type=phone_number&app_absent=0`;
   return (
     <header className={styles.header}>
-      <Image
-        src={JMCHeader}
-        alt="JMC Logo / Departamento Pessoal / Recursos Humanos"
-        width={150}
-      />
+      <Link href="/">
+        <Image
+          src={JMCHeader}
+          alt="JMC Consult Logo"
+          width={150}
+          height={70}
+        />
+      </Link>
       <section>
-        <Link href="#about">
+        <Link href="/#about">
           <h2>Sobre</h2>
         </Link>
-        <Link href="#services">
+        <Link href="/#services">
           <h2>Serviços</h2>
         </Link>
       </section>
