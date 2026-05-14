@@ -6,7 +6,7 @@ import { contact, whatsappUrl } from "document/lib/site";
 
 export default function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-100/80 bg-white/95 backdrop-blur">
       <nav
         className="container-page flex h-20 items-center justify-between gap-4"
         aria-label="Navegação principal"
@@ -28,6 +28,9 @@ export default function Header() {
           </Link>
           <Link href="/#services" className="transition hover:text-brand-700">
             Serviços
+          </Link>
+          <Link href="/folha-de-pagamento-terceirizada" className="transition hover:text-brand-700">
+            Folha terceirizada
           </Link>
           <Link href="/rh-dp-terceirizado-contagem" className="transition hover:text-brand-700">
             RH e DP em Contagem

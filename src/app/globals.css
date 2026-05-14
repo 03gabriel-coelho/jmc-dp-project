@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color: #0f172a;
-  background: #f8fafc;
+  color: #10231d;
+  background: #f7fbf8;
 }
 
 * {
@@ -21,8 +21,9 @@ body {
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 34rem),
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 42%, #eef6ff 100%);
+    radial-gradient(circle at top left, rgba(5, 150, 105, 0.12), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.08), transparent 30rem),
+    linear-gradient(180deg, #ffffff 0%, #f7fbf8 45%, #edf8f1 100%);
 }
 
 a {
@@ -35,12 +36,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #eef2ff;
+  background: #ecfdf5;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2563eb;
-  border: 3px solid #eef2ff;
+  background-color: #047857;
+  border: 3px solid #ecfdf5;
   border-radius: 999px;
 }
 
@@ -62,7 +63,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-whatsapp px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-200;
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-brand-700 px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-brand-800 focus:outline-none focus:ring-4 focus:ring-brand-200;
   }
 
   .btn-secondary {

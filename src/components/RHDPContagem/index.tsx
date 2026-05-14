@@ -39,7 +39,7 @@ export default function RHDPContagem({ config = seoRoutes["/rh-dp-terceirizado-c
             </div>
           </div>
 
-          <aside className="rounded-lg border border-slate-200 bg-brand-50 p-6 shadow-soft">
+          <aside className="rounded-lg border border-brand-100 bg-brand-50 p-6 shadow-soft">
             <p className="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-brand-800">
               <FaMapMarkerAlt aria-hidden="true" />
               Contagem/MG

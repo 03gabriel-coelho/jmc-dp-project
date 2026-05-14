@@ -11,8 +11,8 @@ const highlights = [
 
 export default function Section() {
   return (
-    <section className="relative overflow-hidden bg-white pt-28">
-      <div className="container-page grid min-h-[calc(100vh-5rem)] items-center gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+    <section className="relative overflow-hidden bg-white pt-20">
+      <div className="container-page grid min-h-[calc(100vh-5rem)] items-start gap-10 py-8 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-12">
         <div>
           <p className="section-kicker">JMC Consult RH em Contagem/MG</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
@@ -46,12 +46,12 @@ export default function Section() {
 
         <div className="relative">
           <div className="absolute -inset-4 rounded-full bg-brand-100/70 blur-3xl" aria-hidden="true" />
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-slate-50 shadow-soft">
+          <div className="relative overflow-hidden rounded-lg border border-brand-100 bg-brand-50 shadow-soft">
             <Image
               src={secretary}
               alt="Profissional de RH atendendo empresas em rotinas de Departamento Pessoal"
               priority
-              className="h-auto w-full object-cover"
+              className="h-auto w-full object-cover object-top"
             />
           </div>
         </div>

@@ -24,7 +24,7 @@ const benefits = [
 
 export default function SecondSection() {
   return (
-    <section className="bg-brand-900 py-16 text-white sm:py-20">
+    <section className="bg-brand-950 py-16 text-white sm:py-20">
       <div className="container-page">
         <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
@@ -34,7 +34,7 @@ export default function SecondSection() {
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
               Reduza custos, aumente produtividade e ganhe controle
             </h2>
-            <p className="mt-4 leading-8 text-blue-100">
+            <p className="mt-4 leading-8 text-emerald-50">
               A terceirização de RH e DP permite que sua equipe foque no crescimento
               do negócio enquanto especialistas cuidam das obrigações do dia a dia.
             </p>
@@ -43,9 +43,9 @@ export default function SecondSection() {
           <div className="grid gap-4 sm:grid-cols-3">
             {benefits.map(({ title, description, icon: Icon }) => (
               <article key={title} className="rounded-lg border border-white/10 bg-white/8 p-5">
-                <Icon className="h-8 w-8 text-whatsapp" aria-hidden="true" />
+                <Icon className="h-8 w-8 text-accent-100" aria-hidden="true" />
                 <h3 className="mt-4 text-xl font-bold">{title}</h3>
-                <p className="mt-3 text-sm leading-7 text-blue-100">{description}</p>
+                <p className="mt-3 text-sm leading-7 text-emerald-50">{description}</p>
               </article>
             ))}
           </div>

@@ -2,36 +2,30 @@ import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { FaFacebookSquare, FaMapMarkerAlt, FaPhoneVolume } from "react-icons/fa";
 import { LuInstagram } from "react-icons/lu";
-import { contact, whatsappUrl } from "document/lib/site";
+import { allSeoLinks, contact, whatsappUrl } from "document/lib/site";
 
-const internalLinks = [
-  { href: "/rh-dp-terceirizado-contagem", label: "RH e DP terceirizado" },
-  { href: "/rh-terceirizado-contagem", label: "RH terceirizado" },
-  { href: "/dp-terceirizado-contagem", label: "DP terceirizado" },
-  { href: "/rh-contagem", label: "Consultoria de RH em Contagem" },
-  { href: "/dp-contagem", label: "Departamento Pessoal em Contagem" },
-];
+const footerLinks = allSeoLinks.filter((link) => link.href !== "/site").slice(0, 10);
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 py-12 text-white">
+    <footer className="bg-brand-950 py-12 text-white">
       <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr_0.8fr]">
         <div>
           <h2 className="text-2xl font-bold">JMC Consult RH</h2>
           <p className="mt-4 max-w-sm leading-7 text-slate-300">
             Terceirização de folha de pagamento, administração de pessoal, RH e
-            Departamento Pessoal para empresas em Contagem/MG.
+            Departamento Pessoal para empresas em Contagem/MG e no Brasil.
           </p>
           <p className="mt-5 flex items-center gap-2 text-sm text-slate-300">
-            <FaMapMarkerAlt aria-hidden="true" className="text-whatsapp" />
+            <FaMapMarkerAlt aria-hidden="true" className="text-accent-100" />
             Rua Mojoara, 402 - Contagem, Minas Gerais
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-bold">Serviços em Contagem</h2>
+          <h2 className="text-lg font-bold">Serviços de RH e DP</h2>
           <nav className="mt-4 grid gap-2 text-sm text-slate-300" aria-label="Links de serviços">
-            {internalLinks.map((link) => (
+            {footerLinks.map((link) => (
               <Link key={link.href} href={link.href} className="transition hover:text-white">
                 {link.label}
               </Link>
@@ -41,7 +35,7 @@ export default function Footer() {
 
         <div>
           <h2 className="flex items-center gap-2 text-lg font-bold">
-            <FaPhoneVolume aria-hidden="true" className="text-whatsapp" />
+            <FaPhoneVolume aria-hidden="true" className="text-accent-100" />
             Contato
           </h2>
           <div className="mt-4 space-y-2 text-sm text-slate-300">

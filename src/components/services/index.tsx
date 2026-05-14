@@ -19,7 +19,7 @@ export default function Services() {
           {services.map((service) => (
             <article
               key={service}
-              className="flex gap-3 rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft"
+              className="flex gap-3 rounded-lg border border-brand-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-soft"
             >
               <BiCheckCircle className="mt-1 h-6 w-6 flex-none text-brand-700" aria-hidden="true" />
               <h3 className="text-base font-semibold leading-7 text-slate-800">{service}</h3>
