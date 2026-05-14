@@ -1,55 +1,54 @@
-import styles from "./index.module.css";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaChess } from "react-icons/fa";
+import { FaChess, FaChartLine } from "react-icons/fa";
 import { GiAlarmClock } from "react-icons/gi";
-import { GiProfit } from "react-icons/gi";
+
+const benefits = [
+  {
+    title: "Estratégia",
+    description:
+      "Processos de RH e DP alinhados aos objetivos da empresa, com dados e rotinas mais previsíveis.",
+    icon: FaChess,
+  },
+  {
+    title: "Agilidade",
+    description:
+      "Mais velocidade nas rotinas de admissão, ponto, folha, benefícios, férias e rescisões.",
+    icon: GiAlarmClock,
+  },
+  {
+    title: "Economia",
+    description:
+      "Redução de retrabalho, riscos trabalhistas e custos causados por falhas operacionais.",
+    icon: FaChartLine,
+  },
+];
 
 export default function SecondSection() {
   return (
-    <section className={styles.second_section}>
-      <div className={styles.second_section_container}>
-        <div className={styles.second_section_header_one}>Reduzir Custos</div>
-        <div className={styles.second_section_header_two}>
-          <IoIosArrowForward />
-        </div>
-        <div className={styles.second_section_header_three}>
-          Aumentar Produtividade
-        </div>
-        <div className={styles.second_section_header_four}>
-          <IoIosArrowForward />
-        </div>
-        <div className={styles.second_section_header_five}>
-          LUCRO e SUCESSO da sua empresa
-        </div>
-        <div className={styles.second_section_container_one}>
-          <div className={styles.second_section_container_header}>
-            <FaChess />
-            <h3>Estratégia</h3>
+    <section className="bg-brand-900 py-16 text-white sm:py-20">
+      <div className="container-page">
+        <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-100">
+              Operação mais leve
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Reduza custos, aumente produtividade e ganhe controle
+            </h2>
+            <p className="mt-4 leading-8 text-blue-100">
+              A terceirização de RH e DP permite que sua equipe foque no crescimento
+              do negócio enquanto especialistas cuidam das obrigações do dia a dia.
+            </p>
           </div>
-          <p className={styles.second_section_container_text}>
-            Alinhando objetivos estratégicos, cultura e valores das empresas às
-            competências e motivações dos profissionais.
-          </p>
-        </div>
-        <div className={styles.second_section_container_two}>
-          <div className={styles.second_section_container_header}>
-            <GiAlarmClock />
-            <h3>Agilidade</h3>
+
+          <div className="grid gap-4 sm:grid-cols-3">
+            {benefits.map(({ title, description, icon: Icon }) => (
+              <article key={title} className="rounded-lg border border-white/10 bg-white/8 p-5">
+                <Icon className="h-8 w-8 text-whatsapp" aria-hidden="true" />
+                <h3 className="mt-4 text-xl font-bold">{title}</h3>
+                <p className="mt-3 text-sm leading-7 text-blue-100">{description}</p>
+              </article>
+            ))}
           </div>
-          <p className={styles.second_section_container_text}>
-            Alinhando objetivos estratégicos, cultura e valores das empresas às
-            competências e motivações dos profissionais.
-          </p>
-        </div>
-        <div className={styles.second_section_container_three}>
-          <div className={styles.second_section_container_header}>
-            <GiProfit />
-            <h3>Economia</h3>
-          </div>
-          <p className={styles.second_section_container_text}>
-            Redução de custos causados pela rotatividade ou baixa produtividade
-            por conta de uma contratação realizada de forma equivocada
-          </p>
         </div>
       </div>
     </section>
