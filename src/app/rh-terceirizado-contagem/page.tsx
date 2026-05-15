@@ -1,7 +1,18 @@
+import type { Metadata } from "next";
 import RHDPContagem from "document/components/RHDPContagem";
+import { seoRoutes } from "document/lib/site";
 
-export default function RhContagem() {
-  return (
-    <RHDPContagem />
-  );
+const route = "/rh-terceirizado-contagem";
+const seo = seoRoutes[route];
+
+export const metadata: Metadata = {
+  title: seo.title,
+  description: seo.description,
+  alternates: {
+    canonical: route,
+  },
+};
+
+export default function RhTerceirizadoContagem() {
+  return <RHDPContagem config={seo} />;
 }
